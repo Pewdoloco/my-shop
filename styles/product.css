@@ -1,0 +1,338 @@
+/* Карточки товаров */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 327px;
+    height: 607px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+  }
+  
+  .product-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px;
+    background: #e5be8c;
+    margin-top: 15px;
+  }
+  
+  .product-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .product-text p {
+    font-family: 'Trocchi', serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  
+  .product-price-btn p {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  
+  .product-price-btn span {
+    color: #fe696a;
+    font-weight: 700;
+  }
+  
+  .product-price-btn button {
+    background-color: #fe696a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .product-price-btn button:hover {
+    background-color: #ff4b4d;
+  }
+  
+  /* Корзина */
+  .delete-button {
+    background-color: #FF4136;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #DC2F2F;
+  }
+  
+  .cart-sect {
+    width: 25%;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  
+  .korzina {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px
+  }
+  
+  .korzina h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .korzina ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .korzina li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .korzina li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .korzina .order-btn {
+    background-color: #fe696a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    width: 100%;
+  }
+  
+  .korzina .order-btn:hover {
+    background-color: #ff4b44;
+    color: white;
+    }
+    
+    /* Создание стиля для ссылок */
+    a {
+    color: #333333;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    color: #666666;
+    text-decoration: underline;
+    }
+    
+    /* Создание стиля для формы входа */
+    .login-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    }
+    
+    .login-form label {
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    }
+    
+    .login-form button {
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .login-form button:hover {
+    background-color: #666666;
+    }
+    
+    /* Создание стиля для таблицы товаров */
+    .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    }
+    
+    .product-table th,
+    .product-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #cccccc;
+    }
+    
+    .product-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    }
+    
+    .product-table td img {
+    max-width: 100px;
+    }
+    
+    /* Создание стиля для страницы оформления заказа */
+    .order-form {
+    width: 600px;
+    margin: 0 auto;
+    }
+    
+    .order-form h2 {
+    margin-top: 0;
+    }
+    
+    .order-form label {
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .order-form input[type="text"],
+    .order-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    }
+    
+    .order-form select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    }
+    
+    .order-form button {
+    background-color: #333333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .order-form button:hover {
+    background-color: #666666;
+    color: white;
+    }
+    
+    /* Создание стиля для страницы успешного оформления заказа */
+    .success-page {
+    text-align: center;
+    }
+    
+    .success-page h2 {
+    margin-top: 0;
+    }
+    
+    .success-page p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    }
+    
+    .success-page a {
+    color: #333333;
+    text-decoration: underline;
+    }
+    
+    .success-page a:hover {
+    color: #666666;
+    }
+    
+    /* Создание стиля для страницы ошибки */
+    .error-page {
+    text-align: center;
+    }
+    
+    .error-page h2 {
+    margin-top: 0;
+    color: #cc0000;
+    }
+    
+    .error-page p {
+        font-size: 20px;
+        color: #555;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .error-page button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        .main-sect {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        
+        .products-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .wrapper {
+            width: 50%;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        
