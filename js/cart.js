@@ -6,6 +6,7 @@ function addToCart(productId) {
   renderCart();
 }
 
+// возвращает объект продукта, найденного по его идентификатору
 function getProductById(product_id) {
   var product = {};
   $.ajax({

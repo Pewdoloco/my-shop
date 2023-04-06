@@ -25,8 +25,8 @@ if (isset($_SESSION['success'])) {
     <link rel="stylesheet" href="styles/product.css">
     <link rel="stylesheet" href="styles/auth.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/text.css">
 
-   
 </head>
 
 <body>
@@ -38,6 +38,10 @@ if (isset($_SESSION['success'])) {
         </div>
         <h1>Wonderbar</h1>
     </header>
+    <div class="text-div">
+        <p class="cloud-text cloud-title">My Shop</p>
+        <p class="cloud-text attribute">На нашем сайте вы можете приобрести услуги на любой вкус!</p>
+    </div>
     <main style=" display: flex; flex-direction: row-reverse; justify-content: space-around;">
 
         <div class="cart-sect">
